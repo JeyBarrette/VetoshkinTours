@@ -23,6 +23,15 @@ namespace VetoshkinTours
         public MainWindow()
         {
             InitializeComponent();
+
+            MainFrame.Navigate(new HotelsPage());
+
+            Manager.MainFrame = MainFrame;
+        }
+
+        private void BtnBack_Click(object sender, RoutedEventArgs e)
+        {
+            Manager.MainFrame.GoBack();
         }
     }
 }

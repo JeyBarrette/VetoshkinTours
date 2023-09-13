@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:VetoshkinTours"
         mc:Ignorable="d"
-        Title="VetoshkinTours" Height="450" Width="800" WindowStartupLocation="CenterScreen">
+        Title="VetoshkinTours" Height="350" Width="525" WindowStartupLocation="CenterScreen">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="75"/>
@@ -20,7 +20,10 @@
                    VerticalAlignment="Center"></TextBlock>
         <Grid Grid.Row="2" Background="#445c93"></Grid>
 
-        <Frame Grid.Row="1"></Frame>
+        <Frame Grid.Row="1" Name="MainFrame"></Frame>
+
+        <Button Content="Back" Name="BtnBack" Width="175" Height="30" FontSize="20"
+                HorizontalAlignment="Right" Click="BtnBack_Click"></Button>
 
     </Grid>
 </Window>
